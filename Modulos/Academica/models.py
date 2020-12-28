@@ -11,7 +11,7 @@ class Estudiante(models.Model):
     apellido_paterno = models.CharField(max_length=35)
     apellido_materno = models.CharField(max_length=35)
     nombre = models.CharField(max_length=35)
-    fecha_nacimiento = models.CharField(max_length=35)
+    fecha_nacimiento = models.DateField()
     sexos = {
         ('F','Femenino'),
         ('M','Masculino')
