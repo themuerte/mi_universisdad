@@ -7,7 +7,7 @@
 <body>
     
     <h1>Contactenos</h1>
-    <form>
+    <form action="/contactar/" method="POST">{% csrf_token %}
         <p>Asunto: <input type="text" name="txt_asunto"></p>
         <p>Email: <input type="email" name="txt_email"></p>
         
